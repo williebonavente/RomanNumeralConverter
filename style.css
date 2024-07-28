@@ -1,0 +1,124 @@
+:root {
+  --gray-00: #ffffff;
+  --gray-05: #fafafa; /* Lightened */
+  --gray-15: #e6e6ea; /* Lightened */
+  --gray-75: #757580; /* Lightened */
+  --gray-85: #9a9ab3; /* Lightened */
+  --gray-90: #b1b1c3; /* Lightened */
+  --blue-50: #5aa9e6; /* Lightened */
+  --error: #e57373; /* Lightened */
+  --danger-color: #ff6b6b; /* Lightened */
+  --danger-background: #ffc2c2; /* Lightened */
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 50px 20px; /* Corrected the padding value */
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 18px;
+  font-style: normal;
+  background-color: var(--gray-75); /* Lighter background */
+  color: var(--gray-00); /* Lighter text color */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 350px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+}
+
+form {
+    color: var(--gray-05);
+    margin: auto 25px;
+    padding: 3px solid var(--gray-05);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    background-color: var(--gray-75);
+}
+
+fieldset {
+    border: 0 none;
+    height: 100%;
+    padding: 25px;
+    margin: 10px 20px;
+}
+
+label {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--blue-50);
+}
+
+button {
+    cursor: pointer;
+    margin-top: 15px;
+    text-decoration: none;
+    background-image: linear-gradient(#0000003a, #0c0c0b);
+    border: 3px solid #29262044;
+    padding: 10px 16px;
+    font-size: 23px;
+    width: 100%;
+    color:#e6e6ea
+
+}
+input {
+    display: block;
+    font-size: 2.5rem;
+    width: 100%;
+    height: 60px;
+    padding: 6px 12px;
+    margin: 10px 0;
+    line-height: 1.4;
+    color: white;
+    background-color: var(--gray-90);
+    border: 1px solid var(--gray-05);
+}
+
+
+.output {
+    color: rgb(236, 236, 236);
+    background-color: var(--gray-75); /* Corrected */
+    border: 3px solid var(--gray-05);
+    font-size: 2.5rem;
+    width: 90%;
+    max-width: 500px;
+    min-height: 55px;
+    margin-top: 25px;
+    padding: 15px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.alert {
+    font-size: 2rem;
+    background-color: var(--danger-background);
+    border: 3px solid var(--danger-color);
+    color: var(--danger-color);
+}
+.hidden {
+    display: none;
+}
